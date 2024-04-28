@@ -1,0 +1,162 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: none;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+main {
+    text-align: center;
+}
+
+.dice {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rollAnimation 1s ease-out forwards;
+}
+
+.face {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: #f6f6f9;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 200px;
+    font-size: 48px;
+    color: black;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: rotateX(180deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #1a4bfc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0e3cbf;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+      }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .dice {
+        width: 150px;
+        height: 150px;
+        font-size: 36px;
+    }
+
+    .face {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .dice {
+        width: 180px;
+        height: 180px;
+        font-size: 42px;
+    }
+
+    .face {
+        width: 180px;
+        height: 180px;
+        line-height: 180px;
+        font-size: 42px;
+    }
+}

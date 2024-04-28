@@ -1,0 +1,89 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: none;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+main {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1a4bfc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0e3cbf;
+}
+
+#dogImageContainer {
+  margin-top: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#dogImageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #downloadBtn {
+    margin-top: 5px;
+  }
+}

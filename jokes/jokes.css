@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: none;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+main {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #1a4bfc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0e3cbf;
+}
+
+#jokeContainer {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+      }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #jokeContainer {
+        font-size: 14px;
+    }
+
+    #hindiBtn {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #jokeContainer {
+        font-size: 16px;
+    }
+}

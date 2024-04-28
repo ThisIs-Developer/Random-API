@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="diceRoller.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dice Roller</h1>
+        </header>
+        <main>
+            <div id="dice" class="dice">
+                <div class="face front"><div class="number" onselectstart="return false">1</div></div>
+                <div class="face back"><div class="number"onselectstart="return false">2</div></div>
+                <div class="face top"><div class="number" onselectstart="return false">3</div></div>
+                <div class="face bottom"><div class="number" onselectstart="return false">4</div></div>
+                <div class="face left"><div class="number" onselectstart="return false">5</div></div>
+                <div class="face right"><div class="number" onselectstart="return false">6</div></div>
+            </div>
+            <button id="rollBtn" onselectstart="return false">Roll the Dice</button>
+        </main>
+    </div>
+    <script src="diceRoller.js"></script>
+</body>
+</html>
