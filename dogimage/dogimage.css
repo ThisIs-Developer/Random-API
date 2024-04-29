@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f6f6f9;
   margin: 0;
   padding: 0;
@@ -29,6 +29,7 @@ header {
 
 h1 {
   color: #333;
+  font-size: 2rem;
 }
 
 main {
@@ -36,10 +37,11 @@ main {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 8px 20px;
   background-color: #1a4bfc;
   color: white;
   border: none;
+  font-size: 15px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -60,7 +62,7 @@ button:hover {
   height: auto;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     margin: 20px;
     padding: 10px;
@@ -72,7 +74,7 @@ button:hover {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     margin: 20px;
     padding: 10px;

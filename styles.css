@@ -1,59 +1,161 @@
-/* General Styles */
+
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  text-align: center;
+  font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
 }
 
-/* Header Styles */
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the header appears above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header h1 {
+.fixed-header .left {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.fixed-header .left img {
+  width: 40px; /* Adjust the logo size as needed */
+  height: 40px; /* Adjust the logo size as needed */
+  margin-right: 10px;
+}
+
+.fixed-header .left h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 20px; /* Adjust the font size as needed */
+  color: #333; /* Adjust the color as needed */
+}
+
+.fixed-header .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.fixed-header .right a {
+  margin-left: 20px; /* Adjust the spacing between links */
+  text-decoration: none;
+  color: #333; /* Adjust the color as needed */
   font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
 }
 
-/* Main Content Styles */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
+.fixed-header .right a:hover {
+  color: #007bff; /* Adjust the hover color as needed */
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 120px 20px 20px; /* Updated padding to create space for fixed header */
+}
+
+
+.cards {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 240px;
+  height: 90px;
+  text-align: center;
+  overflow: hidden;
   cursor: pointer;
-  font-size: 16px;
-  margin: 10px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
-button:hover {
-  background-color: #3e8e41;
+.cards:hover {
+  box-shadow: none;
 }
 
-/* Media Queries */
-@media (max-width: 600px) {
-  main {
-    padding: 20px;
+.cards p {
+  font-size: 14px; /* Reduced font size for smaller cards */
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for text overflow */
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-top: 10px;
+}
+
+.cards img {
+  width: 50px; /* Reduced image size */
+  height: 50px; /* Reduced image size */
+  object-fit: cover;
+}
+
+.details {
+  margin-top: 5px; /* Reduced margin for smaller cards */
+}
+
+.details p {
+  font-size: 12px; /* Reduced font size for details */
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.details span {
+  background-color: #007bff;
+  color: #fff;
+  padding: 2px 8px; /* Reduced padding for smaller span */
+  border-radius: 3px; /* Reduced border-radius for smaller span */
+  font-size: 12px; /* Reduced font size for span */
+  margin-right: 5px;
+}
+
+.small-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .cards {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    width: 100%;
+    height: auto; /* Adjust height to auto for smaller screens */
   }
 
-  button {
-    font-size: 14px;
-    padding: 10px 20px;
-    margin: 5px;
+  .cards p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .cards img {
+    width: 40px; /* Adjust image size for smaller screens */
+    height: 40px; /* Adjust image size for smaller screens */
+  }
+
+  .details p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .details span {
+    padding: 2px 4px; /* Adjust padding for smaller screens */
+    border-radius: 2px; /* Adjust border-radius for smaller screens */
+    font-size: 10px; /* Adjust font size for smaller screens */
   }
 }

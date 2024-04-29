@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f6f6f9;
     margin: 0;
     padding: 0;
@@ -48,12 +48,14 @@ main {
     width: 200px;
     height: 200px;
     position: absolute;
-    background-color: #f6f6f9;
-    border: 2px solid black;
+    background-color: #fa1f1f;
+    border: 5px solid rgb(13, 0, 0);
     text-align: center;
     line-height: 200px;
     font-size: 48px;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 .number {
@@ -113,50 +115,44 @@ button:hover {
     background-color: #0e3cbf;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .container {
-        margin: 20px;
-        padding: 10px;
-      }
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .dice {
         width: 150px;
         height: 150px;
         font-size: 36px;
-    }
-
-    .face {
-        width: 150px;
-        height: 150px;
-        line-height: 150px;
-        font-size: 36px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     .container {
         max-width: 90%;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .dice {
         width: 180px;
         height: 180px;
         font-size: 42px;
-    }
-
-    .face {
-        width: 180px;
-        height: 180px;
-        line-height: 180px;
-        font-size: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

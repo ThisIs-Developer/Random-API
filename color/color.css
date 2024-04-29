@@ -1,4 +1,5 @@
 body {
+  font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +42,8 @@ body {
   /* Media Queries */
   @media (max-width: 1200px) {
     .colourbox {
-      width: 25rem;
-      height: 12rem;
+      width: 40rem;
+      height: 22rem;
     }
   }
   
@@ -53,8 +54,8 @@ body {
     }
   
     .colourbox {
-      width: 20rem;
-      height: 10rem;
+      width: 35rem;
+      height: 20rem;
     }
   }
   
@@ -69,7 +70,7 @@ body {
     }
   
     .colourbox {
-      width: 15rem;
-      height: 8rem;
+      width: 20rem;
+      height: 12rem;
     }
   }

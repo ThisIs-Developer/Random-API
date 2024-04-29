@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f6f6f9;
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2rem;
     color: #333;
 }
 
@@ -38,7 +38,7 @@ main {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 8px 20px;
     font-size: 15px;
     background-color: #1a4bfc;
     color: white;

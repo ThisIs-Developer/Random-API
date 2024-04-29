@@ -1,27 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <header class="fixed-header">
+      <div class="left">
+        <img src="assets/cat.png" alt="Image">
+        <h1>Random</h1>
+      </div>
+      <div class="right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
 
-<body>
-  <header>
-    <h1>Random</h1>
-  </header>
-  <main>
-    <button id="colorBtn">Color</button>
-    <button id="catFactBtn">Cat Fact</button>
-    <button id="dogImageBtn">Dog Image</button>
-    <button id="activityBtn">Activity</button>
-    <button id="jokesBtn">Jokes</button>
-    <button id="rollDiceBtn">Roll Dice</button>
-  </main>
+        <div id="colorBtn" class="cards">
+          <div class="small-cards">
+            <div class="main">
+              <img src="assets/palette.png" alt="Image" />
+            </div>
+            <div class="details">
+              <p>RGB</p>
+              <span>Tools</span>
+            </div>
+          </div>
+          <p>Random Color Genarator</p>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div id="catFactBtn" class="cards">
+          <div class="small-cards">
+            <div class="main">
+              <img src="assets/kitty.png" alt="Image" />
+            </div>
+            <div class="details">
+              <p>Cat Fact</p>
+              <span style="background-color: red;">API</span>
+            </div>
+          </div>
+          <p>Random Fact Genarator</p>
+        </div>
 
+        <div id="dogImageBtn" class="cards">
+          <div class="small-cards">
+            <div class="main">
+              <img src="assets/dog.png" alt="Image" />
+            </div>
+            <div class="details">
+              <p>Dog CEO</p>
+              <span style="background-color: red;">API</span>
+            </div>
+          </div>
+          <p>Random Dog Image</p>
+        </div>
+
+        <div id="activityBtn" class="cards">
+          <div class="small-cards">
+            <div class="main">
+              <img src="assets/act.png" alt="Image" />
+            </div>
+            <div class="details">
+              <p>Bored API</p>
+              <span style="background-color: red;">API</span>
+            </div>
+          </div>
+          <p>Random Activity Genarator</p>
+        </div>
+
+        <div id="jokesBtn" class="cards">
+          <div class="small-cards">
+            <div class="main">
+              <img src="assets/laughing.png" alt="Image" />
+            </div>
+            <div class="details">
+              <p>Official Joke API</p>
+              <p>Hindi Jokes API</p>
+              <span style="background-color: red;">API</span>
+            </div>
+          </div>
+          <p>Random Jokes</p>
+        </div>
+
+        <div id="rollDiceBtn" class="cards">
+          <div class="small-cards">
+            <div class="main">
+              <img src="assets/dice roll.png" alt="Image" />
+            </div>
+            <div class="details">
+              <p>Dice Roll</p>
+              <span>Tools</span>
+            </div>
+          </div>
+          <p>Random Number Genarator</p>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f6f6f9;
     margin: 0;
     padding: 0;
@@ -29,6 +29,7 @@ body {
   
   h1 {
     color: #333;
+    font-size: 2rem;
   }
   
   main {
@@ -36,7 +37,7 @@ body {
   }
   
   button {
-    padding: 10px 20px;
+    padding: 8px 20px;
     font-size: 15px;
     background-color: #1a4bfc;
     color: white;
@@ -57,13 +58,13 @@ body {
     line-height: 1.5;
   }
 
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
     .container {
       max-width: 1000px;
     }
   
     button {
-      font-size: 18px;
+      font-size: 15px;
       padding: 12px 24px;
     }
   
@@ -72,7 +73,7 @@ body {
     }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .container {
       margin: 20px;
       padding: 10px;
