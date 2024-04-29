@@ -63,9 +63,15 @@ button:hover {
 }
 
 @media (max-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .container {
     margin: 20px;
     padding: 10px;
+    width: 90%;
   }
 
   button {
