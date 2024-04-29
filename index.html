@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -11,17 +12,24 @@
   </head>
 
   <body>
-    <header class="fixed-header">
+
+    <div class="preloader">
+      <h1>
+          <img src="assets/logo.png" alt="logo">
+          Random
+      </h1>
+    </div>
+
+    <header class="fixed-header" style="display: none;">
       <div class="left">
-        <img src="assets/cat.png" alt="Image">
+        <img src="assets/logo.png" alt="Image">
         <h1>Random</h1>
       </div>
       <div class="right">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="https://github.com/ThisIs-Developer/Random" target="_blank">GitHub</a>
       </div>
     </header>
+
     <main>
       <div class="container">
 
@@ -80,7 +88,7 @@
         <div id="jokesBtn" class="cards">
           <div class="small-cards">
             <div class="main">
-              <img src="assets/laughing.png" alt="Image" />
+              <img src="assets/laughing.png" alt="Image" style="margin-left: 18px;"/>
             </div>
             <div class="details">
               <p>Official Joke API</p>

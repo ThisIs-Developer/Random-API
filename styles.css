@@ -1,10 +1,45 @@
-
 body {
   font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f8f8f8;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.preloader h1 {
+  font-size: 5rem;
+  color: black;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader img {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  margin-right: 10px;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 .fixed-header {
@@ -14,7 +49,7 @@ body {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure the header appears above other content */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,18 +59,19 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
+  margin-left: 30px;
 }
 
 .fixed-header .left img {
-  width: 40px; /* Adjust the logo size as needed */
-  height: 40px; /* Adjust the logo size as needed */
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 
 .fixed-header .left h1 {
   margin: 0;
-  font-size: 20px; /* Adjust the font size as needed */
-  color: #333; /* Adjust the color as needed */
+  font-size: 20px;
+  color: #333;
 }
 
 .fixed-header .right {
@@ -43,18 +79,19 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
+  margin-right: 30px;
 }
 
 .fixed-header .right a {
-  margin-left: 20px; /* Adjust the spacing between links */
+  margin-left: 20px;
   text-decoration: none;
-  color: #333; /* Adjust the color as needed */
+  color: #333;
   font-weight: bold;
-  font-size: 16px; /* Adjust the font size as needed */
+  font-size: 16px;
 }
 
 .fixed-header .right a:hover {
-  color: #007bff; /* Adjust the hover color as needed */
+  color: #007bff;
 }
 
 .container {
@@ -62,9 +99,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 120px 20px 20px; /* Updated padding to create space for fixed header */
+  padding: 120px 20px 20px;
 }
-
 
 .cards {
   background-color: #fff;
@@ -84,27 +120,27 @@ body {
 }
 
 .cards p {
-  font-size: 14px; /* Reduced font size for smaller cards */
+  font-size: 14px;
   font-weight: bold;
   margin: 0;
   overflow: hidden;
-  text-overflow: ellipsis; /* Add ellipsis for text overflow */
-  white-space: nowrap; /* Prevent text wrapping */
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-top: 10px;
 }
 
 .cards img {
-  width: 50px; /* Reduced image size */
-  height: 50px; /* Reduced image size */
+  width: 50px;
+  height: 50px;
   object-fit: cover;
 }
 
 .details {
-  margin-top: 5px; /* Reduced margin for smaller cards */
+  margin-top: 5px;
 }
 
 .details p {
-  font-size: 12px; /* Reduced font size for details */
+  font-size: 12px;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -114,9 +150,9 @@ body {
 .details span {
   background-color: #007bff;
   color: #fff;
-  padding: 2px 8px; /* Reduced padding for smaller span */
-  border-radius: 3px; /* Reduced border-radius for smaller span */
-  font-size: 12px; /* Reduced font size for span */
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
   margin-right: 5px;
 }
 
@@ -124,38 +160,55 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
-/* Media query for responsiveness */
 @media (max-width: 768px) {
   .cards {
     width: calc(50% - 20px);
   }
+
+  .preloader h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding-top: 80px;
+  }
+
   .cards {
     width: 100%;
-    height: auto; /* Adjust height to auto for smaller screens */
+    height: auto;
   }
 
   .cards p {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 14px;
   }
 
   .cards img {
-    width: 40px; /* Adjust image size for smaller screens */
-    height: 40px; /* Adjust image size for smaller screens */
+    width: 40px;
+    height: 40px;
   }
 
   .details p {
-    font-size: 12px; /* Adjust font size for smaller screens */
+    font-size: 12px;
   }
 
   .details span {
-    padding: 2px 4px; /* Adjust padding for smaller screens */
-    border-radius: 2px; /* Adjust border-radius for smaller screens */
-    font-size: 10px; /* Adjust font size for smaller screens */
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+
+  .preloader h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
   }
 }

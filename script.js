@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+      document.querySelector(".preloader").classList.add("fade-out");
+  }, 1500);
+  setTimeout(function () {
+    document.querySelector(".fixed-header").style.display = "flex";
+      document.querySelector(".preloader").style.display = "none";
+  }, 1500);
+});
+  
   document.getElementById('colorBtn').addEventListener('click', () => {
     window.open('color/color.html', '_blank');
   });
