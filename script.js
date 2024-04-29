@@ -31,3 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('rollDiceBtn').addEventListener('click', () => {
     window.open('diceRoller/diceRoller.html', '_blank');
   });
+
+  document.getElementById('passwordBtn').addEventListener('click', () => {
+    window.open('passwordGen/passwordGen.html', '_blank');
+  });
