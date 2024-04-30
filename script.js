@@ -35,3 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('passwordBtn').addEventListener('click', () => {
     window.open('passwordGen/passwordGen.html', '_blank');
   });
+
+  document.getElementById('weatherBtn').addEventListener('click', () => {
+    window.open('weather/weather.html', '_blank');
+  });

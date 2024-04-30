@@ -84,6 +84,11 @@ body {
     padding: 5px 5px;
   }
   
+  .container .small-cards{ 
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
   button {
     padding: 8px 20px;
     margin-top: 15px;
