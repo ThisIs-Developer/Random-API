@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Location Searcher</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Weather Location Searcher</h1>
+      </header>
+      <main>
+        <div class="input">
+          <div class="cards">
+            <label for="locationInput">Enter Location:</label>
+            <input
+              type="text"
+              id="locationInput"
+              placeholder="Enter a location"
+            />
+          </div>
+          <div class="cards">
+            <label for="time" id="timeFrame">Select Time:</label>
+            <select id="time">
+              <option value="">Searach</option>
+              <option value="today">Today</option>
+              <option value="yesterday">Yesterday</option>
+              <option value="tomorrow">Tomorrow</option>
+              <option value="last24hours">Last 24 Hours</option>
+              <option value="last7days">Last 7 days</option>
+              <option value="last15days">Last 15 days</option>
+              <option value="last30days">Last 30 days</option>
+              <option value="next24hours">Next 24 Hours</option>
+              <option value="next7days">Next 7 days</option>
+              <option value="next30days">Next 30 days</option>
+            </select>
+          </div>
+
+          <div class="server cards">
+            <label for="server" id="unit">Change Server:</label>
+            <select id="server">
+              <option value="server1">Default</option>
+              <option value="server2">API 2</option>
+            </select>
+          </div>
+          <button id="searchBtn">Search</button>
+        </div>
+        <div id="weatherDisplay" class="weather-display"></div>
+      </main>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>

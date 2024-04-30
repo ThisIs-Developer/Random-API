@@ -1,0 +1,166 @@
+body {
+    font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f6f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: none;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  main {
+    text-align: center;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  input[type="text"],select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    flex: 1; /* Take remaining space */
+    width: 200px;
+    color: black;
+  }
+
+  select{
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    flex: 1; /* Take remaining space */
+    width: 200px;
+    color: black;
+  }
+
+  .container .cards{
+    margin: 10px;
+  }
+
+  .container .server label, select{
+    font-size: 14px;
+    color: #7f7e7e;
+  }
+
+  .container .cards label {
+    padding: 5px 5px;
+  }
+  
+  button {
+    padding: 8px 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: #1a4bfc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0e3cbf;
+  }
+  
+  .weather-display {
+    margin-top: 20px;
+  }
+  
+  .weather-card {
+    background-color: #f6f6f9;
+    border-radius: 10px;
+    box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.3);
+}
+  
+  .weather-card p {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 1200px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+      width: 90%;
+    }
+  
+    input[type="text"],
+    select {
+      width: 50%;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+      margin: 20px;
+      padding: 10px;
+      width: 90%;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
