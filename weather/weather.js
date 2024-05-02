@@ -20,7 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
             apiKey = 'QRBER4ECEN8MN23V5S9SAMEA4';
         } else if (server === 'server2') {
             apiKey = '6DHFPDMG6GP6XW534CRB6LTTG';
-        } 
+        } else if (server === 'server3') {
+            apiKey = '7NUJJNVH7CF9K6X2XUCZUWMJH';
+        } else if (server === 'server4') {
+            apiKey = '6DMQXFJSJVWY4B2L2ZAYFQR75';
+        }
 
         const apiUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}/${timeFrame}?unitGroup=metric&key=${apiKey}&contentType=json`;
 
@@ -31,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => {
                 console.error('Error fetching weather data:', error);
-                weatherDisplay.innerHTML = '<p>Server is busy. Please try again later.</p>';
+                weatherDisplay.innerHTML = '<p>Server is busy. Please change the server or try again later.</p>';
             });
     });
 
@@ -58,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         sunset, dew, snow, pressure, visibility, cloudcover, windgust} = day;
                 weatherHTML += `
                     <div class="weather-card">
-                    <p><strong>Date and Time:</strong> <span id="datetime">${datetime}</span></p>
+                    <h3><strong>Date and Time:</strong> <span id="datetime">${datetime}</span></h3>
                     <p><strong>Max Temp:</strong> <span id="tempmax">${tempmax}</span>°C</p>
                     <p><strong>Min Temp:</strong> <span id="tempmin">${tempmin}</span>°C</p>
                     <p><strong>Temperature:</strong> <span id="temp">${temp}</span>°C</p>
