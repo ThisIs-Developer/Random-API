@@ -36,25 +36,47 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function displayWeather(weatherData) {
-        const { resolvedAddress, timezone, description, days } = weatherData;
-        let weatherHTML = `
-            <h2>${resolvedAddress}</h2>
-            <p><strong>Timezone:</strong> ${timezone}</p>
-            <p><strong>Description:</strong> ${description}</p>
+        const { resolvedAddress, latitude, longitude, timezone, description, days } = weatherData;
+        let weatherHTML = `   
+            <div class="weather-card">   
+            <img src="../assets/partly-cloudy-day.png" alt="Weather Icon" class="weather-icon" /> 
+            <P><strong>Address:</strong> <span id="address">${resolvedAddress}</span></P>
+            <p><strong>Latitude:</strong> <span id="latitude">${latitude}</span></p>
+            <p><strong>Longitude:</strong> <span id="longitude">${longitude}</span></p>
+            <p><strong>Timezone:</strong> <span id="timezone">${timezone}</span></p>
+            <p><strong>Description:</strong> <span id="description">${description}</span></p>
+            </div>
         `;
 
         if (days && days.length > 0) {
-            weatherHTML += '<h3>Weather Forecast</h3>';
+            weatherHTML += '<h1>Weather Forecast</h1>';
             weatherHTML += '<div class="weather-grid">';
 
             days.forEach(day => {
-                const { datetime, tempmax, tempmin, description } = day;
+                const { datetime, tempmax, tempmin, temp, precip, feelslike, 
+                        windspeed, humidity, uvindex, conditions, sunrise, 
+                        sunset, dew, snow, pressure, visibility, cloudcover, windgust} = day;
                 weatherHTML += `
                     <div class="weather-card">
-                        <p><strong>Date:</strong> ${datetime}</p>
-                        <p><strong>Max Temp:</strong> ${tempmax}°C</p>
-                        <p><strong>Min Temp:</strong> ${tempmin}°C</p>
-                        <p><strong>Description:</strong> ${description}</p>
+                    <p><strong>Date and Time:</strong> <span id="datetime">${datetime}</span></p>
+                    <p><strong>Max Temp:</strong> <span id="tempmax">${tempmax}</span>°C</p>
+                    <p><strong>Min Temp:</strong> <span id="tempmin">${tempmin}</span>°C</p>
+                    <p><strong>Temperature:</strong> <span id="temp">${temp}</span>°C</p>
+                    <p><strong>Precipitation:</strong> <span id="precip">${precip}</span></p>
+                    <p><strong>Feels Like:</strong> <span id="feelslike">${feelslike}</span>°C</p>
+                    <p><strong>Wind Speed:</strong> <span id="windspeed">${windspeed}</span></p>
+                    <p><strong>Humidity:</strong> <span id="humidity">${humidity}</span></p>
+                    <p><strong>UV Index:</strong> <span id="uvindex">${uvindex}</span></p>
+                    <p><strong>Conditions:</strong> <span id="conditions">${conditions}</span></p>
+                    <p><strong>Sunrise:</strong> <span id="sunrise">${sunrise}</span></p>
+                    <p><strong>Sunset:</strong> <span id="sunset">${sunset}</span></p>
+                    <p><strong>Dew Point:</strong> <span id="dew">${dew}</span></p>
+                    <p><strong>Snow:</strong> <span id="snow">${snow}</span></p>
+                    <p><strong>Pressure:</strong> <span id="pressure">${pressure}</span></p>
+                    <p><strong>Visibility:</strong> <span id="visibility">${visibility}</span></p>
+                    <p><strong>Cloud Cover:</strong> <span id="cloudcover">${cloudcover}</span></p>
+                    <p><strong>Wind Gust:</strong> <span id="windgust">${windgust}</span></p>
+                    
                         <p><strong>More Details:</strong> <a href="https://www.visualcrossing.com/weather-history/${resolvedAddress}/${datetime}" target="_blank">Click here</a></p>
                     </div>
                 `;
