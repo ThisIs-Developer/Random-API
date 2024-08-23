@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Finder</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="petfinder.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pet Finder</h1>
+            <p id="about">Pet Finder is dedicated to helping pets find homes, and we know you are too. Pet Finder's site is another way we extend your reach to get pets adopted.</p>
+        </header>
+        <main>
+            <div class="input-group">
+                <button id="fetchBtn">Find Pet</button>
+                <button id="helpBtn">Help</button>
+            </div>
+            <div id="factDisplay" class="fact-display"></div>
+        </main>
+    </div>
+
+    <div id="helpBox" class="help-box">
+        <div class="help-content">
+            <span id="closeHelp" class="close">&times;</span>
+            <h2>Activate CORS</h2>
+            <p>To use this application, you need to activate CORS for your browser. Please click the button below to go to the CORS Anywhere demo page and click "Request temporary access to the demo server".</p>
+            <button id="gotoBtn">Go To</button>
+            <button id="closeHelpBtn">Close</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="petfinder.js"></script>
+</body>
+</html>
