@@ -1,0 +1,199 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.theme-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: none;
+}
+
+.switch-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch-label .material-symbols-outlined {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.light-icon {
+  color: #ffb74d;
+}
+
+.dark-icon {
+  color: #4caf50;
+}
+
+.theme-switch:checked + .switch-label .light-icon {
+  display: none;
+}
+
+.theme-switch:not(:checked) + .switch-label .dark-icon {
+  display: none;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+#search-bar {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: 1px solid #444;
+  border-radius: 24px;
+  width: 200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ddd;
+}
+
+td img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+}
+
+td .coin-details {
+  display: flex;
+  align-items: center;
+}
+
+.buy-button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
+body.light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+body.light th {
+  background-color: #007bff;
+  color: white;
+}
+
+body.dark {
+  background-color: #1c1e22;
+  color: #ffffff;
+}
+
+body.dark th {
+  background-color: #007bff;
+  color: white;
+}
+
+body.dark #search-bar {
+  background-color: #333;
+  color: #fff;
+}
+
+.price-change {
+  display: flex;
+  align-items: center;
+}
+
+.price-change .material-symbols-outlined {
+  margin-left: 0.5rem;
+}
+
+.price-change.positive {
+  color: #4caf50;
+}
+
+.price-change.negative {
+  color: #f44336;
+}
+
+@media (max-width: 1200px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  table thead th:nth-child(1),
+  table tbody td:nth-child(1),
+  table thead th:nth-child(2),
+  table tbody td:nth-child(2) {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #f4f4f4;
+  }
+
+  table tbody td:nth-child(3),
+  table tbody td:nth-child(4),
+  table tbody td:nth-child(5),
+  table tbody td:nth-child(6),
+  table tbody td:nth-child(7),
+  table tbody td:nth-child(8),
+  table tbody td:nth-child(9) {
+    position: relative;
+    z-index: auto;
+    background-color: inherit;
+  }
+
+  body.dark table tbody td:nth-child(1),
+  body.dark table tbody td:nth-child(2) {
+    background-color: #1c1e22;
+  }
+
+  table thead th:nth-child(1),
+  table thead th:nth-child(2) {
+    background-color: #007bff;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Prices</title>
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="cryptocurrency.css">
+</head>
+<body>
+  <header>
+    <h1>Cryptocurrency</h1>
+    <div class="theme-selector">
+      <input type="checkbox" id="theme-switch" class="theme-switch" onclick="changeTheme()">
+      <label for="theme-switch" class="switch-label">
+        <span class="material-symbols-outlined light-icon">light_mode</span>
+        <span class="material-symbols-outlined dark-icon">dark_mode</span>
+      </label>
+    </div>
+  </header>
+  <main>
+    <div class="filters">
+      <input type="text" id="search-bar" placeholder="Search for a cryptocurrency...">
+    </div>
+    <table id="crypto-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Coin</th>
+          <th>Price</th>
+          <th>1h</th>
+          <th>24h</th>
+          <th>7d</th>
+          <th>24h Volume</th>
+          <th>Market Cap</th>
+          <th>Buy</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <script src="cryptocurrency.js"></script>
+</body>
+</html>
