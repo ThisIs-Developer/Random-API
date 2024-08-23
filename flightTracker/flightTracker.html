@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Tracker</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="flightTracker.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-5">
+            <h1 class="display-4">Flight Tracker</h1>
+            <p class="lead">Track real-time flight information</p>
+        </header>
+        <main class="d-flex flex-column align-items-center">
+            <div class="search-container card p-4 mb-5 w-75">
+                <h2 class="text-center mb-4">Find Your Flight</h2>
+                <form id="flightForm" class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="flightNumber">Flight Number:</label>
+                        <input type="text" id="flightNumber" name="flightNumber" class="form-control" placeholder="e.g., DLH123">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="icao24">ICAO24:</label>
+                        <input type="text" id="icao24" name="icao24" class="form-control" placeholder="e.g., 3c6444">
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary mt-3"><i class="fas fa-search"></i> Search Flight</button>
+                    </div>
+                </form>
+            </div>
+            <div id="flightResults" class="row w-100 justify-content-center"></div>
+        </main>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="flightTracker.js"></script>
+</body>
+</html>
