@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.11.1/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="diceRoller.css">
 </head>
 <body>
@@ -16,16 +17,17 @@
         </header>
         <main>
             <div id="dice" class="dice">
-                <div class="face front"><div class="number" onselectstart="return false">1</div></div>
-                <div class="face back"><div class="number"onselectstart="return false">2</div></div>
-                <div class="face top"><div class="number" onselectstart="return false">3</div></div>
-                <div class="face bottom"><div class="number" onselectstart="return false">4</div></div>
-                <div class="face left"><div class="number" onselectstart="return false">5</div></div>
-                <div class="face right"><div class="number" onselectstart="return false">6</div></div>
+                <div class="face front"><div class="number" onselectstart="return false"><span>1</span></div></div>
+                <div class="face back"><div class="number" onselectstart="return false"><span>2</span></div></div>
+                <div class="face top"><div class="number" onselectstart="return false"><span>3</span></div></div>
+                <div class="face bottom"><div class="number" onselectstart="return false"><span>4</span></div></div>
+                <div class="face left"><div class="number" onselectstart="return false"><span>5</span></div></div>
+                <div class="face right"><div class="number" onselectstart="return false"><span>6</span></div></div>
             </div>
             <button id="rollBtn" onselectstart="return false">Roll the Dice</button>
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.11.1/toastify.min.js"></script> 
     <script src="diceRoller.js"></script>
 </body>
 </html>

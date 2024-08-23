@@ -156,3 +156,13 @@ button:hover {
         align-items: center;
     }
 }
+
+.toast-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast-content .toast-icon {
+    margin-right: 10px;
+}
