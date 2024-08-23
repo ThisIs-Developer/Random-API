@@ -19,6 +19,45 @@
     </section>
     <div class="colourbox">
     </div>
+
+    <div class="otherformat">
+        <div>
+            <p id="rgbColor"></p>
+            <button class="copyBtn" data-format="rgb">Copy RGB</button>
+        </div>
+        <div>
+            <p id="rgbaColor"></p>
+            <button class="copyBtn" data-format="rgba">Copy RGBA</button>
+        </div>    
+        <div>
+            <p id="hexColor"></p>
+            <button class="copyBtn" data-format="hex">Copy Hex</button>
+        </div>    
+        <div>
+            <p id="hslColor"></p>
+            <button class="copyBtn" data-format="hsl">Copy HSL</button>
+        </div>    
+        <div>
+            <p id="hslaColor"></p>
+            <button class="copyBtn" data-format="hsla">Copy HSLA</button>
+        </div>
+    </div>
+
+    <button id="helpBtn" class="helpBtn">Help</button>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close">&times;</span>
+            <h3>Color Format Details</h3>
+            <ul>
+                <li><strong>RGB:</strong> Red, Green, Blue values (e.g., rgb(255, 0, 0))</li>
+                <li><strong>RGBA:</strong> Red, Green, Blue, Alpha (e.g., rgba(255, 0, 0, 0.5))</li>
+                <li><strong>Hex:</strong> Hexadecimal color code (e.g., #ff0000)</li>
+                <li><strong>HSL:</strong> Hue, Saturation, Lightness (e.g., hsl(0, 100%, 50%))</li>
+                <li><strong>HSLA:</strong> Hue, Saturation, Lightness, Alpha (e.g., hsla(0, 100%, 50%, 0.5))</li>
+            </ul>
+        </div>
+    </div>
 </body>
 <script src="color.js"></script>
 </html>

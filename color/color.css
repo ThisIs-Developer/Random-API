@@ -1,76 +1,164 @@
 body {
-  font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f6f9;
+}
+
+section {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1a4bfc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0e3cbf;
+}
+
+.colourbox {
+  display: flex;
+  width: 30rem;
+  height: 15rem;
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.colourbox:hover {
+  box-shadow: none;
+}
+
+.otherformat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.otherformat > div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.otherformat p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherformat button {
+  margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .colourbox {
+    width: 40rem;
+    height: 22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .colourbox {
+    width: 35rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    gap: 5px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .colourbox {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  .otherformat > div {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f6f6f9;
   }
-  
-  section {
-    display: flex;
-    gap: 10px;
+
+  .overlay-content {
+    width: 80%;
   }
-  
-  button {
-    padding: 10px 20px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-content h3 {
+  text-align: center;
+}
+
+.overlay-content li {
+  margin-top: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.helpBtn {
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
     background-color: #1a4bfc;
     color: white;
-    border: none;
-    cursor: pointer;
+    padding: 10px 20px;
     border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #0e3cbf;
-  }
-  
-  .colourbox {
-    display: flex;
-    width: 30rem;
-    height: 15rem;
-    margin-top: 30px;
-    background-color: white;
-    box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .colourbox:hover {
-    box-shadow: none;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 1200px) {
-    .colourbox {
-      width: 40rem;
-      height: 22rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    section {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .colourbox {
-      width: 35rem;
-      height: 20rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    section {
-      gap: 5px;
-    }
-  
-    button {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  
-    .colourbox {
-      width: 20rem;
-      height: 12rem;
-    }
-  }
+    cursor: pointer;
+    z-index: 1000;
+}
