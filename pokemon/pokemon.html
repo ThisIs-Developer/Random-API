@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pokémon</title>
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Random Pokémon</h1>
+            <button id="fetchBtn" class="fetch-btn">Get Random Pokémon</button>
+        </header>
+        <main class="main-content">
+            <div class="pokemon-container">
+                <p class="slogan">Discover a random Pokémon from the vast world of Pokémon!</p>
+                <h2 id="pokemonName" class="pokemon-name"></h2>
+                <div class="pokemon-img-wrapper">
+                    <img id="pokemonImg" class="pokemon-img" src="" alt="" style="display: none;">
+                </div>
+                <div id="loading" class="loading" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Please wait...
+                </div>
+                <div id="pokemonInfo" class="pokemon-info" style="display: none;">
+                    <table class="pokemon-table">
+                        <tr>
+                            <th>Type</th>
+                            <td id="pokemonType"></td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td id="pokemonHeight"></td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td id="pokemonWeight"></td>
+                        </tr>
+                        <tr>
+                            <th>Abilities</th>
+                            <td id="pokemonAbilities"></td>
+                        </tr>
+                        <tr>
+                            <th>Base Stats</th>
+                            <td id="pokemonBaseStats"></td>
+                        </tr>
+                        <tr>
+                            <th>Base Experience</th>
+                            <td id="pokemonBaseExperience"></td>
+                        </tr>
+                        <tr>
+                            <th>Held Items</th>
+                            <td id="pokemonHeldItems"></td>
+                        </tr>
+                        <tr>
+                            <th>Location Area Encounters</th>
+                            <td id="pokemonLocationAreaEncounters"></td>
+                        </tr>
+                        <tr>
+                            <th>Moves</th>
+                            <td id="pokemonMoves">
+                                <ul id="movesList"></ul>
+                                <button id="viewMoreMoves" class="view-more-btn" style="display: none;">View More</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Species</th>
+                            <td id="pokemonSpecies"></td>
+                        </tr>
+                        <tr>
+                            <th>Game Indices</th>
+                            <td id="pokemonGameIndices"></td>
+                        </tr>
+                        <tr>
+                            <th>Evolution Chain</th>
+                            <td id="pokemonEvolutionChain"></td>
+                        </tr>
+                        <tr>
+                            <th>Forms</th>
+                            <td id="pokemonForms"></td>
+                        </tr>
+                        <tr>
+                            <th>More Info</th>
+                            <td id="pokemonMoreInfo"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="pokemon.js"></script>
+</body>
+</html>
