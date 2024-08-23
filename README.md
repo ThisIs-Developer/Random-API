@@ -22,7 +22,7 @@ Welcome to Random-API, a collection of mini tools utilizing various APIs to prov
 To get started with this project, simply clone or download the repository and open the `index.html` file in your web browser.
 
 ```bash
-git clone https://github.com/iam-baivab/Random-API.git
+git clone https://github.com/ThisIs-Developer/Random-API.git
 cd Random-API
 ```
 
@@ -134,6 +134,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 
 [license-shield]: https://img.shields.io/badge/License-MIT-red.svg
-[license-url]: https://github.com/iam-baivab/Random-API/blob/main/LICENSE
+[license-url]: https://github.com/ThisIs-Developer/Random-API/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=blue
 [linkedin-url]: https://www.linkedin.com/in/baivabsarkar/
