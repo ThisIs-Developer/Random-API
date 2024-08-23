@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Comics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="comics.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Cartoon Comics</h1>
+            <button id="fetchBtn" class="fetch-btn"><i class="fas fa-random"></i> Get Random Comic</button>
+        </header>
+        <main class="main-content">
+            <div class="comic-container">
+                <p class="slogan">Welcome to Cartoon Comics! Enjoy random comics to brighten your day!</p>
+                <h2 id="comicTitle" class="comic-title"></h2>
+                <div class="comic-img-wrapper">
+                    <img id="comicImg" class="comic-img" src="" alt="">
+                </div>
+                <div id="loading" class="loading" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Please wait...
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="comics.js"></script>
+</body>
+</html>
