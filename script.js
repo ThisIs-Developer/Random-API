@@ -39,3 +39,43 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('weatherBtn').addEventListener('click', () => {
     window.open('weather/weather.html', '_blank');
   });
+
+  document.getElementById('universityBtn').addEventListener('click', () => {
+    window.open('university/university.html', '_blank');
+  });
+
+  document.getElementById('petfinderBtn').addEventListener('click', () => {
+    window.open('petfinder/petfinder.html', '_blank');
+  });
+
+  document.getElementById('catImageBtn').addEventListener('click', () => {
+    window.open('catimage/catimage.html', '_blank');
+  });
+
+  document.getElementById('booklibraryBtn').addEventListener('click', () => {
+    window.open('library/library.html', '_blank');
+  });
+
+  document.getElementById('spacexBtn').addEventListener('click', () => {
+    window.open('spacex-launches/spacex-launches.html', '_blank');
+  });
+
+  document.getElementById('cryptoBtn').addEventListener('click', () => {
+    window.open('cryptocurrency/cryptocurrency.html', '_blank');
+  });
+
+  document.getElementById('adviceBtn').addEventListener('click', () => {
+    window.open('advice/advice.html', '_blank');
+  });
+
+  document.getElementById('comicBtn').addEventListener('click', () => {
+    window.open('comics/comics.html', '_blank');
+  });
+
+  document.getElementById('pokemonBtn').addEventListener('click', () => {
+    window.open('pokemon/pokemon.html', '_blank');
+  });
+
+  document.getElementById('recipeBtn').addEventListener('click', () => {
+    window.open('recipeFinder/recipeFinder.html', '_blank');
+  });
