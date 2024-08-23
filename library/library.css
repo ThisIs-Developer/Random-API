@@ -1,0 +1,221 @@
+body {
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: none;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+main {
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+  flex: 1;
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 15px;
+  background-color: #1a4bfc;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0e3cbf;
+  transform: translateY(-2px);
+}
+
+.book-results {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.book-card {
+  background-color: #f6f6f9;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.2);
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3rem 5rem rgba(132, 139, 200, 0.3);
+}
+
+.book-card h3 {
+  margin-top: 0;
+}
+
+.book-card p {
+  margin: 5px 0;
+}
+
+.isbn-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.isbn-box {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.book-card a {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.book-card img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 50%;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  .book-card img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .book-card img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  border-top: 3px solid #176b87;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
