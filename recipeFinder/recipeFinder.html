@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="recipeFinder.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-5">
+            <h1 class="display-3 font-weight-bold">Recipe Finder</h1>
+            <p class="lead text-muted">Discover and enjoy the best recipes from around the world.</p>
+        </header>
+        <main class="d-flex flex-column align-items-center">
+            <div class="search-container card p-5 mb-5 w-75 shadow-lg">
+                <h2 class="text-center mb-4">Find Your Perfect Recipe</h2>
+                <form id="recipeForm" class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="cuisineType">Cuisine Type:</label>
+                        <select id="cuisineType" name="cuisineType" class="form-control">
+                            <option value="">Any</option>
+                            <option value="Indian">Indian</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Italian">Italian</option>
+                            <option value="American">American</option>
+                            <option value="Mediterranean">Mediterranean</option>
+                            <option value="European">European</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="mealTime">Meal Time:</label>
+                        <select id="mealTime" name="mealTime" class="form-control">
+                            <option value="">Any</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Snacks">Snacks</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty" name="difficulty" class="form-control">
+                            <option value="">Any</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary mt-3 btn-lg"><i class="fas fa-search"></i> Search Recipes</button>
+                    </div>
+                </form>
+            </div>
+            <div id="recipeResults" class="row w-100 justify-content-center"></div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="recipeFinder.js"></script>
+</body>
+</html>
