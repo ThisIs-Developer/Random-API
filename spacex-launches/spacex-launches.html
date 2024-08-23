@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceX Launches</title>
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="spacex-launches.css">
+</head>
+<body>
+  <header>
+    <h1>SpaceX Launches</h1>
+    <div class="theme-selector">
+      <input type="checkbox" id="theme-switch" class="theme-switch" onclick="changeTheme()">
+      <label for="theme-switch" class="switch-label">
+        <span class="material-symbols-outlined light-icon">light_mode</span>
+        <span class="material-symbols-outlined dark-icon">dark_mode</span>
+      </label>
+    </div>
+  </header> 
+  
+  <main>
+    <div class="filters">
+      <input type="text" id="search-bar" placeholder="Search for a mission...">
+      <select id="year-filter">
+        <option value="">All Years</option>
+      </select>
+    </div>
+    <div id="launches-container">
+    </div>
+  </main>
+  <script src="spacex-launches.js"></script>
+</body>
+</html>
