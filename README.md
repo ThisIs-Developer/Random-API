@@ -104,6 +104,11 @@ This project integrates the following APIs using JavaScript:
 18. **Spoonacular**
       - URL: [Spoonacular API](https://spoonacular.com/food-api)
       - The spoonacular Nutrition, Recipe, and Food API allows you to access over 5,000 recipes, thousands of ingredients.
+
+19. **The OpenSky Network**
+      - URL: [The OpenSky Network API](https://opensky-network.org/)
+      - The OpenSky Network is a non-profit association based in Switzerland that provides open access of flight tracking control data.
+      
 ## Tools Without API
 
 This project also includes the following tools that do not require external APIs:
