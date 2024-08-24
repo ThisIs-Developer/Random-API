@@ -79,3 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('recipeBtn').addEventListener('click', () => {
     window.open('recipeFinder/recipeFinder.html', '_blank');
   });
+
+  document.getElementById('flightBtn').addEventListener('click', () => {
+    window.open('flightTracker/flightTracker.html', '_blank');
+  });
